@@ -33,4 +33,91 @@
 
 body {
   font-family: var(--font-family-base);
+  font-size: var(--font-size-400);
+
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding-inline: 1rem;
+}
+
+.button {
+  background-color: var(--color-accent-400);
+  color: var(--color-neutral-100);
+  padding: 12px 20px;
+  border-radius: 11px;
+  border: none;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-size-800);
+}
+
+h2 {
+  font-size: var(--font-size-700);
+}
+
+h3 {
+  font-size: var(--font-size-600);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-accent);
+  font-weight: 700;
+}
+
+.lead {
+  font-size: var(--font-size-500);
+}
+
+/* Layout */
+
+.header {
+  padding-block: 12px;
+  border-bottom: 1px solid var(--color-neutral-400);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.primary-brand {
+  font-size: var(--font-size-500);
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.primary-nav {
+  display: none;
+
+  @media (width > 800px) {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.primary-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+}
+
+.primary-nav a {
+  color: var(--color-neutral-700);
+  text-decoration: none;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible {
+  color: var(--color-accent-800);
 }
