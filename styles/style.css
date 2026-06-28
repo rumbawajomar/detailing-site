@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url(/fonts/HankenGrotesk.ttf);
+}
+
+@font-face {
+  font-family: Sora;
+  src: url(/fonts/Sora.ttf);
+}
+
+:root {
+  --color-neutral-100: #ffffff;
+  --color-neutral-300: #f4f6fa;
+  --color-neutral-400: #eceff4;
+  --color-neutral-700: #54606f;
+
+  --color-accent-100: #e8f0fe;
+  --color-accent-400: #1463f3;
+  --color-accent-800: #0f1b2d;
+
+  --color-rating: #f5a623;
+  --color-success: #1fb573;
+
+  --font-size-400: 0.9375rem;
+  --font-size-500: 1.125rem;
+  --font-size-600: 1.5rem;
+  --font-size-700: clamp(30px, 3.4vi, 42px);
+  --font-size-800: clamp(40px, 4.8vi, 62px);
+
+  --font-family-base: 'Hanken Grotesk';
+  --font-family-accent: Sora;
+}
+
+body {
+  font-family: var(--font-family-base);
+}
