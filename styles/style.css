@@ -34,21 +34,33 @@
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-400);
+  color: var(--color-accent-800);
 
   margin: 0;
   padding: 0;
 }
 
+img {
+  display: block;
+  inline-size: 100%;
+  border-radius: 28px;
+}
+
 .wrapper {
+  max-width: 1200px;
   padding-inline: 1rem;
+  margin-inline: auto;
 }
 
 .button {
-  background-color: var(--color-accent-400);
-  color: var(--color-neutral-100);
   padding: 12px 20px;
   border-radius: 11px;
   border: none;
+}
+
+.button-blue {
+  background-color: var(--color-accent-400);
+  color: var(--color-neutral-100);
 }
 
 /* Typography */
@@ -70,16 +82,22 @@ h2,
 h3 {
   font-family: var(--font-family-accent);
   font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .lead {
+  color: var(--color-neutral-700);
   font-size: var(--font-size-500);
 }
 
 /* Layout */
 
 .header {
-  padding-block: 12px;
+  padding-block: 8px;
   border-bottom: 1px solid var(--color-neutral-400);
 }
 
@@ -120,4 +138,45 @@ h3 {
 .primary-nav a:hover,
 .primary-nav a:focus-visible {
   color: var(--color-accent-800);
+}
+
+.hero {
+  padding-block: 24px;
+}
+
+.badge {
+  font-size: var(--font-size-400);
+  background-color: var(--color-accent-100);
+  color: var(--color-accent-800);
+
+  width: fit-content;
+  padding: 6px 12px;
+  border: 1px solid var(--color-neutral-400);
+  border-radius: 28px;
+}
+
+.badge::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e; /* Green color */
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.hero .button {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  margin-top: 1em;
+}
+
+.rating {
+  padding-block: 12px;
+}
+
+.rating span {
+  color: var(--color-rating);
 }
