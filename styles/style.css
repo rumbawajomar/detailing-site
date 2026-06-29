@@ -58,9 +58,14 @@ img {
   border: none;
 }
 
+.button-large {
+  padding: 20px 32px;
+}
+
 .button-blue {
   background-color: var(--color-accent-400);
   color: var(--color-neutral-100);
+  box-shadow: 0 2px 5px var(--color-accent-400);
 }
 
 /* Typography */
@@ -144,6 +149,16 @@ p {
   padding-block: 24px;
 }
 
+.hero-content {
+  display: grid;
+
+  @media (width > 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    align-items: center;
+  }
+}
+
 .badge {
   font-size: var(--font-size-400);
   background-color: var(--color-accent-100);
@@ -169,8 +184,14 @@ p {
   display: block;
   width: 100%;
   text-align: center;
-
   margin-top: 1em;
+
+  @media (width > 960px) {
+    display: inline-block;
+    width: fit-content;
+
+    margin-right: 1em;
+  }
 }
 
 .rating {
