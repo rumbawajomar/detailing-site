@@ -207,3 +207,22 @@ p {
 .rating span {
   color: var(--color-rating);
 }
+
+.banner {
+  background: var(--color-neutral-300);
+  padding-inline: 1rem;
+  padding-block: 25px;
+}
+
+.banner-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+
+  max-width: 800px;
+  margin-inline: auto;
+
+  @media (width > 600px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
