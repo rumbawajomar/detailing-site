@@ -20,7 +20,7 @@
 
   --color-rating: #f5a623;
   --color-success: #1fb573;
-
+  --font-size-300: 0.875rem;
   --font-size-400: 0.9375rem;
   --font-size-500: 1.125rem;
   --font-size-600: 1.5rem;
@@ -97,6 +97,14 @@ p {
 .lead {
   color: var(--color-neutral-700);
   font-size: var(--font-size-500);
+}
+
+.label {
+  color: var(--color-accent-400);
+  font-size: var(--font-size-300);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Layout */
@@ -224,5 +232,56 @@ p {
 
   @media (width > 600px) {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.services {
+  padding-block: 64px;
+
+  @media (width > 960px) {
+    padding-block: 96px;
+  }
+}
+
+.services h2 {
+  max-width: 500px;
+  margin-block-start: 0.5rem;
+}
+
+.services-intro {
+  text-wrap: balance;
+  max-width: 600px;
+}
+
+.services p {
+  color: var(--color-neutral-700);
+}
+
+.services-content {
+  display: grid;
+  gap: 48px;
+
+  @media (width > 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.service-card p {
+  border-bottom: 1px solid var(--color-neutral-400);
+  padding-block-end: 24px;
+}
+
+.service-card-footer {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    font-size: var(--font-size-500);
+    font-weight: 700;
+  }
+
+  a {
+    color: var(--color-accent-400);
+    text-decoration: none;
   }
 }
